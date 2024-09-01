@@ -1,0 +1,90 @@
+/* Mobile First View */
+
+header {
+    background-color: #0e0b13;
+    overflow: hidden;
+}
+
+h1 {
+    color: #9c2459;
+    float: left;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#hamburger_checkbox {
+    display: none;
+}
+
+#hamburger_icon {
+    background-color: #9c2459;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 10%;
+}
+
+/* Show and hide menu */
+#hamburger_checkbox:not(:checked) + nav {
+    display: none;
+}
+
+nav a {
+    color: #9c2459;
+    float: left;
+    font-size: 17px;
+    padding: 30px 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+/* Highlight on mouse hover */
+nav a:hover {
+    background-color: #249c67;
+    color: #0e0b13;
+}
+
+/* Highlight on tab key focus */
+nav a:focus {
+    background-color: #249c67;
+    color: #0e0b13;
+    outline: none;
+}
+
+/* Highlight current page */
+.active_nav {
+    background-color: #9c2459;
+    color: #0e0b13;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* Hides hamburger icon on wider displays */
+    #hamburger_icon {
+        display: none;
+    }
+
+    /* Shows navigation links */
+    #hamburger_checkbox:not(:checked) +nav {
+        display: block;
+    }
+
+    h1 {
+        text-align: left;
+        width: 390px;
+    }
+
+    nav {
+        float: right;
+    }
+
+    nav a {
+        width: auto;
+    }
+}

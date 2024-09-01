@@ -1,0 +1,61 @@
+/* Mobile First View */
+
+main > div {
+    background-color: white;
+    border-radius: 10px;
+    font: 30px;
+    padding: 20px;
+    text-align: left;
+}
+
+main > div > h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+main > div > h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+main > div > h4 {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    color: grey;
+}
+
+main > div > p {
+    font-size: 18px;
+}
+
+main {
+    background-color: #0e0b13;
+    display: grid;
+    grid-template-areas: 
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.';
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.rating {
+    font-weight: bold;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    main {
+        grid-template-areas: 
+        '. . .'
+        '. . .'
+        '. . .';
+    }
+}

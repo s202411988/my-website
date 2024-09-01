@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="el_newg's website" />
+    <title>el_newg // Contact</title>
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.png" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="footer.css" />
+</head>
+
+<body>
+    <header>
+        <h1>CONTACT</h1>
+        <label for="hamburger_checkbox">
+            <img src="images/icons/menu.png" alt="Menu" id="hamburger_icon">
+        </label>
+        <input type="checkbox" id="hamburger_checkbox">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="screenshots.html">Screenshots</a>
+            <a href="contact.html" class="active_nav">Contact</a>
+        </nav>
+    </header>
+
+    <form id="contact_form" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" autocomplete="given-name"><br>
+        <label for="lname">Surname:</label><br>
+        <input type="text" id="lname" name="lname" autocomplete="family-name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" autocomplete="email"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+
+    <footer>
+        <p>
+            <span property="dct:title">el_newg &copy;</span> by 
+            <span property="cc:attributionName">el_newg</span> is licensed under 
+            <br>
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY-NC-SA 4.0
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
